@@ -58,17 +58,19 @@ WSGI_APPLICATION = 'p_kreker.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'Name': 'p_kreker',
+        'ENGINE': 'mysql.connector.django',
+        'User': 'paul',
+        'Password': 'm2aJup2fHYDdArGT',
     }
 }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'de-de'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Berlin'
 
 USE_I18N = True
 
