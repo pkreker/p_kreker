@@ -58,10 +58,13 @@ WSGI_APPLICATION = 'p_kreker.wsgi.application'
 
 DATABASES = {
     'default': {
-        'Name': 'p_kreker',
+        'NAME': 'p_kreker',
         'ENGINE': 'mysql.connector.django',
-        'User': 'paul',
-        'Password': 'm2aJup2fHYDdArGT',
+        'USER': 'paul',
+        'PASSWORD': 'm2aJup2fHYDdArGT',
+        'OPTIONS': {
+            'autocommit': True,
+        },
     }
 }
 
